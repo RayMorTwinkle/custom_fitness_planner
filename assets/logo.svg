@@ -1,0 +1,48 @@
+<svg viewBox="0 0 512 512" width="512" height="512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FlowFit">
+  <title>FlowFit</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2BD4B4"/>
+      <stop offset="100%" stop-color="#3E9E4E"/>
+    </linearGradient>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#DFF5EE"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EAF7F2"/>
+    </linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#sh)">
+    <rect x="51" y="51" width="410" height="410" rx="94" fill="url(#bg)"/>
+  </g>
+  <rect x="51" y="51" width="410" height="410" rx="94" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2.5"/>
+
+  <!-- dumbbell bar -->
+  <rect x="150" y="244" width="150" height="24" rx="12" fill="url(#bar)"/>
+
+  <!-- left plates -->
+  <rect x="104" y="176" width="54" height="160" rx="20" fill="url(#plate)"/>
+  <rect x="140" y="202" width="30" height="108" rx="14" fill="#FFFFFF" fill-opacity="0.70"/>
+
+  <!-- right plate -->
+  <rect x="340" y="176" width="54" height="160" rx="20" fill="url(#plate)"/>
+
+  <!-- countdown dial -->
+  <circle cx="367" cy="256" r="30" fill="#0E7C66"/>
+  <circle cx="367" cy="256" r="30" fill="none" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="3"/>
+  <circle cx="367" cy="256" r="21" fill="none" stroke="#8FE3CB" stroke-opacity="0.55" stroke-width="3" stroke-dasharray="99 33" stroke-linecap="round" transform="rotate(-90 367 256)"/>
+  <!-- tick marks -->
+  <g stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="3" stroke-linecap="round">
+    <line x1="367" y1="232" x2="367" y2="239"/>
+    <line x1="367" y1="273" x2="367" y2="280"/>
+    <line x1="343" y1="256" x2="350" y2="256"/>
+    <line x1="384" y1="256" x2="391" y2="256"/>
+  </g>
+  <text x="367" y="266" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">45</text>
+</svg>
